@@ -1,0 +1,10 @@
+name: Reusable execution
+
+on:
+  workflow_call:
+
+jobs:
+  reuse_job1:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "MY REUSABLE JOB 1 - executed"
